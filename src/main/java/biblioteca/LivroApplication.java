@@ -1,13 +1,13 @@
-package biblioteca.fernando;
+package biblioteca;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FernandoApplication {
+public class LivroApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FernandoApplication.class, args);
+		SpringApplication.run(LivroApplication.class, args);
 	}
 
 }

@@ -1,10 +1,9 @@
-package biblioteca.fernando.controller;
+package biblioteca.controller;
 
-import biblioteca.fernando.model.Livro;
-import biblioteca.fernando.services.LivroService;
+import biblioteca.model.Livro;
+import biblioteca.services.LivroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

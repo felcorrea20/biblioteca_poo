@@ -1,7 +1,7 @@
-package biblioteca.fernando.services;
+package biblioteca.services;
 
-import biblioteca.fernando.model.Livro;
-import biblioteca.fernando.repository.LivroRepository;
+import biblioteca.model.Livro;
+import biblioteca.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

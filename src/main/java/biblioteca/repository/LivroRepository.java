@@ -1,6 +1,6 @@
-package biblioteca.fernando.repository;
+package biblioteca.repository;
 
-import biblioteca.fernando.model.Livro;
+import biblioteca.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

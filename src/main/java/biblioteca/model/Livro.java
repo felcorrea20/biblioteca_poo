@@ -1,4 +1,4 @@
-package biblioteca.fernando.model;
+package biblioteca.model;
 
 import jakarta.persistence.*;
 
