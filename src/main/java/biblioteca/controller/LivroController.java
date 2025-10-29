@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/livros")
+@CrossOrigin( origins = "*" )
 public class LivroController {
     @Autowired
     private LivroService livroService;
@@ -19,17 +20,20 @@ public class LivroController {
     public ResponseEntity<Livro> adicionarLivro(@RequestBody Livro livro){
         return ResponseEntity.ok(livroService.adicionarLivro(livro));
     }
+
     //Read
     @GetMapping
     public ResponseEntity<List<Livro>> listarLivro(){
         return ResponseEntity.ok(livroService.listarLivros());
     }
+
     @GetMapping("/{id}")
-    public ResponseEntity<Livro> buscarPorId(@PathVariable Long id, @RequestBody Livro livro){
+    public ResponseEntity<Livro> buscarPorId(@PathVariable Long id){
         return livroService.buscarPorId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
     //update
     @PutMapping("/{id}")
     public ResponseEntity<Livro> atualizarLivro(@PathVariable Long id,@RequestBody Livro livro){
